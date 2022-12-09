@@ -1,1 +1,2 @@
 # -PS2-joystick-module
+The PS2 joystick module is a device that uses a pair of potentiometers to measure the position of a joystick. The module typically connects to an Arduino board via four pins: power, ground, a digital output pin for the X axis, and a digital output pin for the Y axis.In this code, the PS2 joystick module is connected to analog pins 0 and 1, and the joystick's X and Y axis positions are read and printed to the serial port. You can use the Arduino serial monitor to view the values, which will range from 0 to 1023 depending on the joystick's position.
