@@ -1,0 +1,23 @@
+// connect the PS2 joystick module to analog pins 0 and 1
+const int xAxisPin = 0;
+const int yAxisPin = 1;
+
+void setup() {
+  // initialize the serial port
+  Serial.begin(9600);
+}
+
+void loop() {
+  // read the joystick position
+  int xAxis = analogRead(xAxisPin);
+  int yAxis = analogRead(yAxisPin);
+
+  // print the joystick position
+  Serial.print("X axis: ");
+  Serial.println(xAxis);
+  Serial.print("Y axis: ");
+  Serial.println(yAxis);
+
+  // wait for one second
+  delay(1000);
+}
